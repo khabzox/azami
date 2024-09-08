@@ -15,13 +15,249 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-cols-26 {
+  grid-template-columns: repeat(26, minmax(0, 1fr));
+}
+
+.grid-cols-30 {
+  grid-template-columns: repeat(30, minmax(0, 1fr));
+}
+
+/* col start */
+
+.col-start-14 {
+  grid-column-start: 14;
+}
+
+.col-start-15 {
+  grid-column-start: 15;
+}
+
+.col-start-16 {
+  grid-column-start: 16;
+}
+
+.col-start-17 {
+  grid-column-start: 17;
+}
+
+.col-start-18 {
+  grid-column-start: 18;
+}
+
+.col-start-19 {
+  grid-column-start: 19;
+}
+
+.col-start-20 {
+  grid-column-start: 20;
+}
+
+.col-start-21 {
+  grid-column-start: 21;
+}
+
+.col-start-22 {
+  grid-column-start: 22;
+}
+
+.col-start-23 {
+  grid-column-start: 23;
+}
+
+.col-start-24 {
+  grid-column-start: 24;
+}
+
+.col-start-25 {
+  grid-column-start: 25;
+}
+
+.col-start-26 {
+  grid-column-start: 26;
+}
+
+.col-start-27 {
+  grid-column-start: 27;
+}
+
+.col-start-28 {
+  grid-column-start: 28;
+}
+
+.col-start-29 {
+  grid-column-start: 29;
+}
+
+.col-start-30 {
+  grid-column-start: 30;
+}
+
+.col-start-31 {
+  grid-column-start: 31;
+}
+
+/* col end */
+
+.col-end-14 {
+  grid-column-end: 14;
+}
+
+.col-end-15 {
+  grid-column-end: 15;
+}
+
+.col-end-16 {
+  grid-column-end: 16;
+}
+
+.col-end-17 {
+  grid-column-end: 17;
+}
+
+.col-end-18 {
+  grid-column-end: 18;
+}
+
+.col-end-19 {
+  grid-column-end: 19;
+}
+
+.col-end-20 {
+  grid-column-end: 20;
+}
+
+.col-end-21 {
+  grid-column-end: 21;
+}
+
+.col-end-22 {
+  grid-column-end: 22;
+}
+
+.col-end-23 {
+  grid-column-end: 23;
+}
+
+.col-end-24 {
+  grid-column-end: 24;
+}
+
+.col-end-25 {
+  grid-column-end: 25;
+}
+
+.col-end-26 {
+  grid-column-end: 26;
+}
+
+.col-end-27 {
+  grid-column-end: 27;
+}
+
+.col-end-28 {
+  grid-column-end: 28;
+}
+
+.col-end-29 {
+  grid-column-end: 29;
+}
+
+.col-end-30 {
+  grid-column-end: 30;
+}
+
+.col-end-31 {
+  grid-column-end: 31;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Optional: Add this to a CSS file or a CSS-in-JS solution */
+@keyframes reveal {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+.timeline-line {
+  animation: reveal 1s forwards;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
